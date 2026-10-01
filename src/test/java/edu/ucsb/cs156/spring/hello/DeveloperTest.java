@@ -22,9 +22,13 @@ public class DeveloperTest {
 
     @Test
     public void getName_returns_correct_name() {
-        // TODO: Replace Chris G. with your name as shown on
-        // <https://bit.ly/cs156-f26-teams>
-        assertEquals("Chris G.", Developer.getName());
+        assertEquals("Noah N", Developer.getName());
+    }
+
+    @Test
+    public void getTeam_returns_team_with_correct_name() {
+        Team  t = Developer.getTeam();
+        assertEquals("f26-05", t.getName());
     }
 
     // TODO: Add additional tests as needed to get to 100% jacoco line coverage, and
