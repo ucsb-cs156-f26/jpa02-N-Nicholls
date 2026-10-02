@@ -23,7 +23,7 @@ public class DeveloperTest {
 
     @Test
     public void getName_returns_correct_name() {
-        assertEquals("NOAH PAUL", Developer.getName());
+        assertEquals("Noah N", Developer.getName());
     }
 
     @Test
