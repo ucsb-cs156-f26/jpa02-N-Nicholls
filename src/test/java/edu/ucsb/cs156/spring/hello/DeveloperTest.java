@@ -1,6 +1,7 @@
 package edu.ucsb.cs156.spring.hello;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.lang.reflect.Constructor;
@@ -26,12 +27,18 @@ public class DeveloperTest {
     }
 
     @Test
+    public void getName_returns_false_for_empty() {
+        assertFalse(Developer.getName() == "");
+    }
+
+    @Test
+    public void getGithubId_returns_false_for_empty() {
+        assertFalse(Developer.getGithubId() == "");
+    }
+
+    @Test
     public void getTeam_returns_team_with_correct_name() {
         Team  t = Developer.getTeam();
         assertEquals("f26-05", t.getName());
     }
-
-    // TODO: Add additional tests as needed to get to 100% jacoco line coverage, and
-    // 100% mutation coverage (all mutants timed out or killed)
-
 }
