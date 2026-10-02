@@ -25,7 +25,7 @@ public class Developer {
      */
 
     public static String getGithubId() {
-        return "n-nicholls";
+        return "N-Nicholls";
     }
 
     /**
@@ -35,12 +35,13 @@ public class Developer {
     
     public static Team getTeam() {
         Team team = new Team("f26-05");
-        team.addMember("Brandon Y");
-        team.addMember("Calvin");
-        team.addMember("Jerek");
-        team.addMember("Jovia");
-        team.addMember("Noah N");
-        team.addMember("Tara");
+        team.addMember("BRANDON");
+        team.addMember("CALVIN");
+        team.addMember("JAREK");
+        team.addMember("JOVIA");
+        team.addMember("NOAH PAUL");
+        team.addMember("TARA");
         return team;
     }
+
 }
