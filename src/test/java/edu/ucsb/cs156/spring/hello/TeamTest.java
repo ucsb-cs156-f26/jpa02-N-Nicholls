@@ -25,14 +25,15 @@ public class TeamTest {
     @Test
     public void getTeam_returns_team_with_correct_members() {
         Team t = Developer.getTeam();
-        assertTrue(t.getMembers().contains("BRANDON"), "Team should contain Brandon Y");
-        assertTrue(t.getMembers().contains("CALVIN"), "Team should contain Calvin");
-        assertTrue(t.getMembers().contains("JAREK"), "Team should contain Jerek");
-        assertTrue(t.getMembers().contains("JOVIA"), "Team should contain Jovia");
-        assertTrue(t.getMembers().contains("NOAH PAUL"), "Team should contain Noah N");
-        assertTrue(t.getMembers().contains("TARA NICOLE"), "Team should contain Tara");
+        assertTrue(t.getMembers().contains("Brandon Y"), "Team should contain Brandon Y");
+        assertTrue(t.getMembers().contains("Calvin"), "Team should contain Calvin");
+        assertTrue(t.getMembers().contains("Jarek"), "Team should contain Jarek");
+        assertTrue(t.getMembers().contains("Jovia"), "Team should contain Jovia");
+        assertTrue(t.getMembers().contains("Noah N"), "Team should contain Noah N");
+        assertTrue(t.getMembers().contains("Tara"), "Team should contain Tara");
         assertEquals(6, t.getMembers().size(), "Team should have exactly 6 members");
     }
+
 
     // same object
     @Test void equals_returns_true(){
